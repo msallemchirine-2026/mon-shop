@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique En Ligne - Landing Page</title>
+    <!-- ربط ملف CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+    <!-- استدعاء خط أنيق من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. En-tête (Header & Navigation) -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">MonShop<span>.</span></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Section Hero (قسم ترحيبي) -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <h1>Découvrez nos produits exclusifs</h1>
+            <p>Des offres exceptionnelles sur une sélection d'articles de haute qualité.</p>
+            <a href="#produits" class="btn btn-primary">Voir la boutique</a>
+        </div>
+    </section>
+
+    <!-- 3. Section Produits (قسم المنتجات 4 بطاقات) -->
+    <section id="produits" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nos Produits Vedettes</h2>
+            
+            <div class="products-grid">
+
+                <!-- Produit 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Casque audio">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Casque Audio</h3>
+                        <p class="product-description">Un son haute fidélité pour votre musique au quotidien.</p>
+                        <div class="product-footer">
+                            <span class="product-price">129 €</span>
+                            <button class="btn btn-buy">Acheter</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Montre connectée">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Montre Connectée</h3>
+                        <p class="product-description">Suivez vos activités et restez connecté partout.</p>
+                        <div class="product-footer">
+                            <span class="product-price">89 €</span>
+                            <button class="btn btn-buy">Acheter</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500" alt="Enceinte Bluetooth">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Enceinte Bluetooth</h3>
+                        <p class="product-description">Puissante et étanche pour vos sorties en plein air.</p>
+                        <div class="product-footer">
+                            <span class="product-price">59 €</span>
+                            <button class="btn btn-buy">Acheter</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=500" alt="Chaussures de sport">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Chaussures Sport</h3>
+                        <p class="product-description">Confort optimal pour le running et la marche.</p>
+                        <div class="product-footer">
+                            <span class="product-price">110 €</span>
+                            <button class="btn btn-buy">Acheter</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Section À propos (نبذة عنا ليعمل رابط القائمة) -->
+    <section id="apropos" class="about-section">
+        <div class="container">
+            <h2 class="section-title">À propos de nous</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto; color: #555;">
+                MonShop est votre destination idéale pour trouver des produits technologiques et de mode de haute qualité au meilleur prix. Nous nous engageons à vous offrir une expérience d'achat simple, sécurisée et rapide.
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. Section Contact (قسم التواصل ليعمل رابط القائمة) -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea rows="4" placeholder="Votre message..." required></textarea>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 6. Pied de page (Footer) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 MonShop. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Confidentialité</a>
+                <a href="#">Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
